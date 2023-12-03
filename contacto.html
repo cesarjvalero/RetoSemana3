@@ -6,101 +6,96 @@
     <title>Tiendas Muebles</title>
 </head>
 <body>
-    <h1>Tiendas Muebles</h1>
-
-    <nav>
-        <ul></ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/nosotros.html">Nosotros</a></li>
-        <li><a href="/tiendas.html">Tienda</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/galeria.html">Galería</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </nav>
-
-    <section>
-        <h2>Contacto</h2>
+    <header><h1>Tiendas Muebles</h1>
+        <nav>
+            <ul></ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/nosotros.html">Nosotros</a></li>
+            <li><a href="/tiendas.html">Tienda</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </nav>
+    </header>
+    <main>
+        <header><h2>Contacto</h2></header>
     
-    <section>
-        <article>
-        <h3><head>TUS DATOS</head></h3>
-
-        <form action="/">
-            <div>
-                <label for="nombre">Nombre</label><br>
-                <input id="nombre" type="text" placeholder="Tu Nombre" required/>
-            </div>
-        
-            <div>
-                <label for="asunto">Asunto</label><br>
-                <input id="asunto" type="text" placeholder="Tu Asunto"/>
-            </div>
-
-            <div>
-                <label for="email">E-mail</label><br>
-                <input id="email" type="email" placeholder="Tu Email" required/>
-            </div>
-                  
-        
-            <div>
-                <label for="number">Tu teléfono</label><br>
-                <input id="number" type="number" placeholder="Tu Teléfono"/>
-            </div>
-                        
-            <div>
-                <label for="mensaje">Mensaje</label><br>
-                <textarea name="" id="mensaje" cols="30" rows="10" required></textarea>
-              </div>
-
-        </form>
-        </article>
-
-        <article>
-            <h3><head>PAÍS</head></h3>
-
+        <section>    
             <form action="/">
-                <div>
-                    <label for="seleccionado">País</label>
-                    <select name="" id="seleccionado">
-                        <option value="0">México</option>
-                        <option value="1">Perú</option>
-                        <option value="2">Colombia</option>
-                        <option value="3">Argentina</option>
-                        <option value="4">España</option>
-                        <option value="5">Chile</option>
-                    </select>
-                </div>
+                <fieldset>
+                    <legend>TUS DATOS</legend>
+                        <div>
+                            <label for="nombre">Nombre</label><br>
+                            <input id="nombre" type="text" placeholder="Tu Nombre" required/>
+                        </div>
+                    
+                        <div>
+                            <label for="asunto">Asunto</label><br>
+                            <input id="asunto" type="text" placeholder="Tu Asunto"/>
+                        </div>
+            
+                        <div>
+                            <label for="email">E-mail</label><br>
+                            <input id="email" type="email" placeholder="Tu Email" required/>
+                        </div>
+                            
+                    
+                        <div>
+                            <label for="number">Tu teléfono</label><br>
+                            <input id="number" type="number" placeholder="Tu Teléfono"/>
+                        </div>
+                                    
+                        <div>
+                            <label for="mensaje">Mensaje</label><br>
+                            <textarea name="" id="mensaje" cols="30" rows="10" required></textarea>
+                        </div>
+                </fieldset>
             </form>
-        </article>
-
-        <article>
-            <h3><head>INFORMACIÓN EXTRA</head></h3>
-
-            <form action="/">
-            <div>
-                <label for="rol"></label>
-                <input type="radio" name="rol">Cliente<br>
-                <input type="radio" name="rol">Proveedor<br>
-                
-            </div>
-
-            <div>
-                <label for="seleccionado">Categoría de interés</label>
-                <select name="" id="seleccionado">
-                    <option value="0">Cocina</option>
-                    <option value="1">Exterior</option>
-                    <option value="2">Recámaras</option>
-                    <option value="3">Oficina</option>
-                    <option value="4">Recámaras</option>
-                </select>
-            </div>
-        </article>
-
-        <article>
-        <button type="submit">Enviar formulario</button>
-        </article>
-    </section>
-
+        </section> 
+        <section>    
+            <form action="/">  
+                <fieldset>
+                    <legend>PAÍS</legend>
+                        <div>
+                            <label for="seleccionado">País</label>
+                            <select name="" id="seleccionado">
+                                <option value="0">México</option>
+                                <option value="1">Perú</option>
+                                <option value="2">Colombia</option>
+                                <option value="3">Argentina</option>
+                                <option value="4">España</option>
+                                <option value="5">Chile</option>
+                            </select>
+                        </div>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <form action="/">  
+                <fieldset>
+                    <legend>INFORMACIÓN EXTRA</legend>  
+                        <div>
+                            <label for="rol"></label>
+                            <input type="radio" name="rol">Cliente<br>
+                            <input type="radio" name="rol">Proveedor<br>
+                    
+                        </div>
+                        <div>
+                            <label for="seleccionado">Categoría de interés</label>
+                            <select name="" id="seleccionado">
+                                <option value="0">Cocina</option>
+                                <option value="1">Exterior</option>
+                                <option value="2">Recámaras</option>
+                                <option value="3">Oficina</option>
+                                <option value="4">Recámaras</option>
+                            </select>
+                        </div>
+                </fieldset>
+        </section>
+        <section>
+            <button type="submit">Enviar formulario</button>
+        </section>
+    </main>
     <footer>
         <section>
             <h1>Categorías</h1>
